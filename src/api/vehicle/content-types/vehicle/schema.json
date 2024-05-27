@@ -22,6 +22,35 @@
     },
     "equipment_name": {
       "type": "string"
+    },
+    "transmission": {
+      "type": "enumeration",
+      "enum": [
+        "manual",
+        "automat",
+        "robot",
+        "variator"
+      ]
+    },
+    "wheel_drive": {
+      "type": "enumeration",
+      "enum": [
+        "front",
+        "rear",
+        "all"
+      ]
+    },
+    "modification": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::modification.modification",
+      "inversedBy": "vehicles"
+    },
+    "options": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::option.option",
+      "inversedBy": "vehicles"
     }
   }
 }

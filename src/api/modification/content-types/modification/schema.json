@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modifications",
+  "info": {
+    "singularName": "modification",
+    "pluralName": "modifications",
+    "displayName": "Modification"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "engine_volume": {
+      "type": "decimal"
+    },
+    "wheelbase": {
+      "type": "integer"
+    },
+    "power": {
+      "type": "decimal"
+    },
+    "torque": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "fuel_consumption_mixed": {
+      "type": "decimal"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "modification"
+    }
+  }
+}
