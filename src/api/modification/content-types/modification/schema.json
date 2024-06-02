@@ -4,7 +4,8 @@
   "info": {
     "singularName": "modification",
     "pluralName": "modifications",
-    "displayName": "Modification"
+    "displayName": "Modification",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -37,6 +38,15 @@
       "relation": "oneToMany",
       "target": "api::vehicle.vehicle",
       "mappedBy": "modification"
+    },
+    "transmission": {
+      "type": "enumeration",
+      "enum": [
+        "manual",
+        "automat",
+        "robot",
+        "variator"
+      ]
     }
   }
 }

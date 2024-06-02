@@ -4,7 +4,8 @@
   "info": {
     "singularName": "option",
     "pluralName": "options",
-    "displayName": "Option"
+    "displayName": "Option",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,18 +18,14 @@
     "value": {
       "type": "string"
     },
-    "group": {
-      "type": "enumeration",
-      "enum": [
-        "warm_options",
-        "electric_drives"
-      ]
-    },
     "vehicles": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::vehicle.vehicle",
       "mappedBy": "options"
+    },
+    "comparison_group": {
+      "type": "string"
     }
   }
 }

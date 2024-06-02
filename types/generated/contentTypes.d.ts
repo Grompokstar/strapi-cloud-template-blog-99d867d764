@@ -1051,6 +1051,7 @@ export interface ApiModificationModification extends Schema.CollectionType {
     singularName: 'modification';
     pluralName: 'modifications';
     displayName: 'Modification';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1067,6 +1068,9 @@ export interface ApiModificationModification extends Schema.CollectionType {
       'api::modification.modification',
       'oneToMany',
       'api::vehicle.vehicle'
+    >;
+    transmission: Attribute.Enumeration<
+      ['manual', 'automat', 'robot', 'variator']
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1092,6 +1096,7 @@ export interface ApiOptionOption extends Schema.CollectionType {
     singularName: 'option';
     pluralName: 'options';
     displayName: 'Option';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1099,12 +1104,12 @@ export interface ApiOptionOption extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     value: Attribute.String;
-    group: Attribute.Enumeration<['warm_options', 'electric_drives']>;
     vehicles: Attribute.Relation<
       'api::option.option',
       'manyToMany',
       'api::vehicle.vehicle'
     >;
+    comparison_group: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1156,6 +1161,8 @@ export interface ApiVehicleVehicle extends Schema.CollectionType {
       'manyToMany',
       'api::option.option'
     >;
+    name: Attribute.String;
+    photos: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -51,6 +51,19 @@
       "relation": "manyToMany",
       "target": "api::option.option",
       "inversedBy": "vehicles"
+    },
+    "name": {
+      "type": "string"
+    },
+    "photos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
