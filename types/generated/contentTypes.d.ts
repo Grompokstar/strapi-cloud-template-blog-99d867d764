@@ -921,6 +921,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
+    logo: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
