@@ -1103,14 +1103,30 @@ export interface ApiOptionOption extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String;
-    value: Attribute.String;
+    text_value: Attribute.String;
     vehicles: Attribute.Relation<
       'api::option.option',
       'manyToMany',
       'api::vehicle.vehicle'
     >;
-    comparison_group: Attribute.String;
+    group: Attribute.Enumeration<
+      [
+        'climate',
+        'heated_front_seats',
+        'heated_rear_seats',
+        'heated_wheel',
+        'heated_windshield',
+        'cruise_control',
+        'adaptive_cruise_control',
+        'panoramic_roof',
+        'camera_360',
+        'digital_panel',
+        'multimedia_system_size'
+      ]
+    >;
+    value_type: Attribute.Enumeration<['boolean', 'number', 'text']>;
+    boolean_value: Attribute.Boolean;
+    number_value: Attribute.Float;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1148,9 +1164,6 @@ export interface ApiVehicleVehicle extends Schema.CollectionType {
     >;
     price: Attribute.BigInteger;
     equipment_name: Attribute.String;
-    transmission: Attribute.Enumeration<
-      ['manual', 'automat', 'robot', 'variator']
-    >;
     wheel_drive: Attribute.Enumeration<['front', 'rear', 'all']>;
     modification: Attribute.Relation<
       'api::vehicle.vehicle',

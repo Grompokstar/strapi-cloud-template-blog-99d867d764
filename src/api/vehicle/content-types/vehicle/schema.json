@@ -23,15 +23,6 @@
     "equipment_name": {
       "type": "string"
     },
-    "transmission": {
-      "type": "enumeration",
-      "enum": [
-        "manual",
-        "automat",
-        "robot",
-        "variator"
-      ]
-    },
     "wheel_drive": {
       "type": "enumeration",
       "enum": [
@@ -56,14 +47,15 @@
       "type": "string"
     },
     "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

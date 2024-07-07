@@ -12,10 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "value": {
+    "text_value": {
       "type": "string"
     },
     "vehicles": {
@@ -24,8 +21,35 @@
       "target": "api::vehicle.vehicle",
       "mappedBy": "options"
     },
-    "comparison_group": {
-      "type": "string"
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "climate",
+        "heated_front_seats",
+        "heated_rear_seats",
+        "heated_wheel",
+        "heated_windshield",
+        "cruise_control",
+        "adaptive_cruise_control",
+        "panoramic_roof",
+        "camera_360",
+        "digital_panel",
+        "multimedia_system_size"
+      ]
+    },
+    "value_type": {
+      "type": "enumeration",
+      "enum": [
+        "boolean",
+        "number",
+        "text"
+      ]
+    },
+    "boolean_value": {
+      "type": "boolean"
+    },
+    "number_value": {
+      "type": "float"
     }
   }
 }
