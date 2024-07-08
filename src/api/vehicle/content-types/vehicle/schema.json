@@ -23,14 +23,6 @@
     "equipment_name": {
       "type": "string"
     },
-    "wheel_drive": {
-      "type": "enumeration",
-      "enum": [
-        "front",
-        "rear",
-        "all"
-      ]
-    },
     "modification": {
       "type": "relation",
       "relation": "manyToOne",

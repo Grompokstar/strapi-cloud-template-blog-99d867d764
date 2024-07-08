@@ -883,6 +883,7 @@ export interface ApiModificationModification extends Schema.CollectionType {
     transmission: Attribute.Enumeration<
       ['manual', 'automat', 'robot', 'variator']
     >;
+    wheel_drive: Attribute.Enumeration<['front', 'rear', 'all']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -974,7 +975,6 @@ export interface ApiVehicleVehicle extends Schema.CollectionType {
     >;
     price: Attribute.BigInteger;
     equipment_name: Attribute.String;
-    wheel_drive: Attribute.Enumeration<['front', 'rear', 'all']>;
     modification: Attribute.Relation<
       'api::vehicle.vehicle',
       'manyToOne',

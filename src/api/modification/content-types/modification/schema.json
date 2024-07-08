@@ -47,6 +47,14 @@
         "robot",
         "variator"
       ]
+    },
+    "wheel_drive": {
+      "type": "enumeration",
+      "enum": [
+        "front",
+        "rear",
+        "all"
+      ]
     }
   }
 }
