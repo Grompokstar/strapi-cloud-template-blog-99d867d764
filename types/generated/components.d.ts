@@ -62,6 +62,19 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface VehiclesPrices extends Schema.Component {
+  collectionName: 'components_vehicles_prices';
+  info: {
+    displayName: 'Prices';
+    description: '';
+  };
+  attributes: {
+    traide_in: Attribute.Integer;
+    credit: Attribute.Integer;
+    credit__tradeIn: Attribute.Integer;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -70,6 +83,7 @@ declare module '@strapi/types' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'vehicles.prices': VehiclesPrices;
     }
   }
 }

@@ -987,6 +987,8 @@ export interface ApiVehicleVehicle extends Schema.CollectionType {
     >;
     name: Attribute.String;
     photos: Attribute.Media;
+    prices: Attribute.Component<'vehicles.prices'>;
+    manufacturer_discount: Attribute.Integer & Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

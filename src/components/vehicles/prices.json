@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_vehicles_prices",
+  "info": {
+    "displayName": "Prices",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "traide_in": {
+      "type": "integer"
+    },
+    "credit": {
+      "type": "integer"
+    },
+    "credit__tradeIn": {
+      "type": "integer"
+    }
+  }
+}

@@ -48,6 +48,15 @@
         "videos",
         "audios"
       ]
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicles.prices"
+    },
+    "manufacturer_discount": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
