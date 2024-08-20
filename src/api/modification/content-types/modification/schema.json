@@ -55,6 +55,38 @@
         "rear",
         "all"
       ]
+    },
+    "length": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "fuel_type": {
+      "type": "enumeration",
+      "enum": [
+        "petrol",
+        "diesel",
+        "gas",
+        "electro",
+        "hybrid"
+      ]
+    },
+    "tank_capacity": {
+      "type": "integer"
+    },
+    "clearance": {
+      "type": "integer"
+    },
+    "rear_suspension_type": {
+      "type": "enumeration",
+      "enum": [
+        "dependent",
+        "independent"
+      ]
     }
   }
 }

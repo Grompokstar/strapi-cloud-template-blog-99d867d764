@@ -889,6 +889,15 @@ export interface ApiModificationModification extends Schema.CollectionType {
       ['manual', 'automat', 'robot', 'variator']
     >;
     wheel_drive: Attribute.Enumeration<['front', 'rear', 'all']>;
+    length: Attribute.Integer;
+    width: Attribute.Integer;
+    height: Attribute.Integer;
+    fuel_type: Attribute.Enumeration<
+      ['petrol', 'diesel', 'gas', 'electro', 'hybrid']
+    >;
+    tank_capacity: Attribute.Integer;
+    clearance: Attribute.Integer;
+    rear_suspension_type: Attribute.Enumeration<['dependent', 'independent']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-08-13T21:58:47.327Z"
+    "x-generation-date": "2024-08-20T20:12:21.900Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1949,6 +1949,38 @@
                   "rear",
                   "all"
                 ]
+              },
+              "length": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "fuel_type": {
+                "type": "string",
+                "enum": [
+                  "petrol",
+                  "diesel",
+                  "gas",
+                  "electro",
+                  "hybrid"
+                ]
+              },
+              "tank_capacity": {
+                "type": "integer"
+              },
+              "clearance": {
+                "type": "integer"
+              },
+              "rear_suspension_type": {
+                "type": "string",
+                "enum": [
+                  "dependent",
+                  "independent"
+                ]
               }
             }
           }
@@ -2968,6 +3000,38 @@
                                         "all"
                                       ]
                                     },
+                                    "length": {
+                                      "type": "integer"
+                                    },
+                                    "width": {
+                                      "type": "integer"
+                                    },
+                                    "height": {
+                                      "type": "integer"
+                                    },
+                                    "fuel_type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "petrol",
+                                        "diesel",
+                                        "gas",
+                                        "electro",
+                                        "hybrid"
+                                      ]
+                                    },
+                                    "tank_capacity": {
+                                      "type": "integer"
+                                    },
+                                    "clearance": {
+                                      "type": "integer"
+                                    },
+                                    "rear_suspension_type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "dependent",
+                                        "independent"
+                                      ]
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -3435,6 +3499,38 @@
               "front",
               "rear",
               "all"
+            ]
+          },
+          "length": {
+            "type": "integer"
+          },
+          "width": {
+            "type": "integer"
+          },
+          "height": {
+            "type": "integer"
+          },
+          "fuel_type": {
+            "type": "string",
+            "enum": [
+              "petrol",
+              "diesel",
+              "gas",
+              "electro",
+              "hybrid"
+            ]
+          },
+          "tank_capacity": {
+            "type": "integer"
+          },
+          "clearance": {
+            "type": "integer"
+          },
+          "rear_suspension_type": {
+            "type": "string",
+            "enum": [
+              "dependent",
+              "independent"
             ]
           },
           "createdAt": {
@@ -4620,6 +4716,38 @@
                                         "front",
                                         "rear",
                                         "all"
+                                      ]
+                                    },
+                                    "length": {
+                                      "type": "integer"
+                                    },
+                                    "width": {
+                                      "type": "integer"
+                                    },
+                                    "height": {
+                                      "type": "integer"
+                                    },
+                                    "fuel_type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "petrol",
+                                        "diesel",
+                                        "gas",
+                                        "electro",
+                                        "hybrid"
+                                      ]
+                                    },
+                                    "tank_capacity": {
+                                      "type": "integer"
+                                    },
+                                    "clearance": {
+                                      "type": "integer"
+                                    },
+                                    "rear_suspension_type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "dependent",
+                                        "independent"
                                       ]
                                     },
                                     "createdAt": {
@@ -7739,6 +7867,38 @@
                           "front",
                           "rear",
                           "all"
+                        ]
+                      },
+                      "length": {
+                        "type": "integer"
+                      },
+                      "width": {
+                        "type": "integer"
+                      },
+                      "height": {
+                        "type": "integer"
+                      },
+                      "fuel_type": {
+                        "type": "string",
+                        "enum": [
+                          "petrol",
+                          "diesel",
+                          "gas",
+                          "electro",
+                          "hybrid"
+                        ]
+                      },
+                      "tank_capacity": {
+                        "type": "integer"
+                      },
+                      "clearance": {
+                        "type": "integer"
+                      },
+                      "rear_suspension_type": {
+                        "type": "string",
+                        "enum": [
+                          "dependent",
+                          "independent"
                         ]
                       },
                       "createdAt": {
