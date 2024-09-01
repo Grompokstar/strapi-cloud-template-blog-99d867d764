@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-08-28T21:39:27.443Z"
+    "x-generation-date": "2024-09-01T05:29:36.270Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3195,7 +3195,12 @@
                                           "TPMS",
                                           "driver_seat_memory",
                                           "assistance_start_on_rise",
-                                          "independent_rear_suspension"
+                                          "independent_rear_suspension",
+                                          "leather_steering_wheel",
+                                          "rear_armrest",
+                                          "anti-theft_alarm",
+                                          "isofix",
+                                          "speed_​​limiter"
                                         ]
                                       },
                                       "value_type": {
@@ -3703,7 +3708,12 @@
                   "TPMS",
                   "driver_seat_memory",
                   "assistance_start_on_rise",
-                  "independent_rear_suspension"
+                  "independent_rear_suspension",
+                  "leather_steering_wheel",
+                  "rear_armrest",
+                  "anti-theft_alarm",
+                  "isofix",
+                  "speed_​​limiter"
                 ]
               },
               "value_type": {
@@ -4913,7 +4923,12 @@
                                           "TPMS",
                                           "driver_seat_memory",
                                           "assistance_start_on_rise",
-                                          "independent_rear_suspension"
+                                          "independent_rear_suspension",
+                                          "leather_steering_wheel",
+                                          "rear_armrest",
+                                          "anti-theft_alarm",
+                                          "isofix",
+                                          "speed_​​limiter"
                                         ]
                                       },
                                       "value_type": {
@@ -5276,7 +5291,12 @@
               "TPMS",
               "driver_seat_memory",
               "assistance_start_on_rise",
-              "independent_rear_suspension"
+              "independent_rear_suspension",
+              "leather_steering_wheel",
+              "rear_armrest",
+              "anti-theft_alarm",
+              "isofix",
+              "speed_​​limiter"
             ]
           },
           "value_type": {
@@ -7563,7 +7583,12 @@
                                                       "TPMS",
                                                       "driver_seat_memory",
                                                       "assistance_start_on_rise",
-                                                      "independent_rear_suspension"
+                                                      "independent_rear_suspension",
+                                                      "leather_steering_wheel",
+                                                      "rear_armrest",
+                                                      "anti-theft_alarm",
+                                                      "isofix",
+                                                      "speed_​​limiter"
                                                     ]
                                                   },
                                                   "value_type": {

@@ -1007,7 +1007,12 @@ export interface ApiOptionOption extends Schema.CollectionType {
         'TPMS',
         'driver_seat_memory',
         'assistance_start_on_rise',
-        'independent_rear_suspension'
+        'independent_rear_suspension',
+        'leather_steering_wheel',
+        'rear_armrest',
+        'anti-theft_alarm',
+        'isofix',
+        'speed_\u200B\u200Blimiter'
       ]
     >;
     value_type: Attribute.Enumeration<['boolean', 'number', 'text']>;
