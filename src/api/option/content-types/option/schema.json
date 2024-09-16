@@ -100,7 +100,15 @@
         "rear_armrest",
         "anti-theft_alarm",
         "isofix",
-        "speed_​​limiter"
+        "speed_​​limiter",
+        "button_start_engine",
+        "heating_of_rest_area_of_wiper_blades",
+        "third_row_of_seats",
+        "adjustable_backrest_of_second_row_of_seats",
+        "longitudinal_adjustment_of_second_row_of_seats",
+        "passenger_seat_memory",
+        "start-stop_system",
+        "tinted_rear_windows"
       ]
     },
     "value_type": {
