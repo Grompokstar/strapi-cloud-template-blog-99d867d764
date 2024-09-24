@@ -1020,7 +1020,19 @@ export interface ApiOptionOption extends Schema.CollectionType {
         'longitudinal_adjustment_of_second_row_of_seats',
         'passenger_seat_memory',
         'start-stop_system',
-        'tinted_rear_windows'
+        'tinted_rear_windows',
+        'acoustic_front_side_windows',
+        'acoustic_windshield',
+        'video_recorder',
+        'side_mirror_memory',
+        'two_tone_painting',
+        'massage_of_rear_seats',
+        'acoustic_rear_side_windows',
+        'active_noise_reduction',
+        'downshift',
+        'rear_locking',
+        'front_locking',
+        'trailer_ready'
       ]
     >;
     value_type: Attribute.Enumeration<['boolean', 'number', 'text']>;
