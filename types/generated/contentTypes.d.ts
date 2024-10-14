@@ -843,6 +843,23 @@ export interface ApiModelModel extends Schema.CollectionType {
       'oneToMany',
       'api::sale.sale'
     >;
+    body_type: Attribute.Enumeration<
+      [
+        'sedan',
+        'suv_5d',
+        'suv_3d',
+        'liftback',
+        'universal',
+        'hatch_5d',
+        'hatch_3d',
+        'coupe',
+        'minivan',
+        'pickup',
+        'van',
+        'cabriolet',
+        'minibus'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -25,6 +25,24 @@
       "relation": "oneToMany",
       "target": "api::sale.sale",
       "mappedBy": "model"
+    },
+    "body_type": {
+      "type": "enumeration",
+      "enum": [
+        "sedan",
+        "suv_5d",
+        "suv_3d",
+        "liftback",
+        "universal",
+        "hatch_5d",
+        "hatch_3d",
+        "coupe",
+        "minivan",
+        "pickup",
+        "van",
+        "cabriolet",
+        "minibus"
+      ]
     }
   }
 }
